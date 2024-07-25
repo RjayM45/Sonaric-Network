@@ -1,3 +1,15 @@
+Can be run using local machine or VPS.
+
+This instruction is for Linux-VPS
+
+# System Requirements (Linux-VPS)
+
+* 4 GB RAM 8 GB+ RAM
+* 2 CPU cores 4+ CPU cores
+* 20 GB free disk space 100 GB+ free disk space (SSD)
+* amd64 CPU Architecture amd64 CPU Architecture
+
+---
 ### Install Update / Packages :
 ```
 sudo apt update -y && sudo apt upgrade -y
@@ -46,8 +58,11 @@ apt-get install sonaricd sonaric
 sonaric node-info
 ```
 
+# DONE - Exit the terminal
+
 ---
-### Accessing the GUI in PC
+## Accessing the GUI in PC
+### Open terminal on local machine
 1. Create an SSH tunnel to forward the required ports to your local machine
 Run this on local machine /cli
 ```
@@ -59,9 +74,8 @@ Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP addres
 2. You will be prompted to authenticate cia SSH. Once authenticated, the SSH tunnel will be established.
 3. Open a web browser on your local machine and navigate to `http://localhost:44004` to access the Sonaric GUI.
 
-### Accessing the GUI in Smartphone
-
-## RECOMMENDED
+## Accessing the GUI in Smartphone
+## RECOMMENDED if using smartphone
 ### Using Termux
 
 1. Install Termux: Download and install the Termux app from the Google Play Store.
