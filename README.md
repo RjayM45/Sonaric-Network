@@ -86,12 +86,11 @@ ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127
 6. Access the Forwarded Port: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
     - Use Google Chrome Desktop Mode
   
-7. On the GUI.
+## On the GUI.
    - click on `Referral Codes` on the upper right corner
-   - Add my code for additional 100 points
-```
-troe4jy
-```
+   - Add my code provided below for additional 100 points
+# troe4jy
+
 
 -DONE-
 
