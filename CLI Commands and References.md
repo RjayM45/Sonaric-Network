@@ -77,8 +77,10 @@ Daemon version: v1.1.0, build: 53bc66e4
 ## `points` Command
 The `points` command prints the points collected by the node. This command displays the following information:
 ```
-✔ Points: 1234
+sonaric points
 ```
+✔ Points: 1234
+
 
 ## `node-rename` Command
 The `node-rename` command allows you to rename your node. This command is useful for changing the name of your node as displayed in the [Sonaric Tracker](https://tracker.sonaric.xyz/).
