@@ -66,7 +66,7 @@ sonaric node-info
 1. Create an SSH tunnel to forward the required ports to your local machine
 Run this on local machine /cli
 ```
-ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 `user@your-vps-ip`
+ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 user@your-vps-ip
 ```
 
 Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP address.
@@ -90,7 +90,7 @@ pkg install openssh
 4. Create an SSH Tunnel: Use the ssh command to create the tunnel. Replace user, remote_server, and remote_port with your actual details. The command looks like this:
 
 ```
-ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 root@'YOUR-IP'
+ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 root@YOUR-IP
 ```
 
 `user@remote_server`: Replace user with your SSH username and remote_server with the hostname or IP address of the remote server.
