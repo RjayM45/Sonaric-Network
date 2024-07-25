@@ -131,7 +131,7 @@ Following these steps will create an SSH tunnel and forward `local port 44004` o
     - Tap the SSH connection to start the session.
     - Enter your password if prompted.
 
-6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:8080 or localhost:8080 on your Android device.
+6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
 
 Using 127.0.0.1 or localhost ensures that the forwarding works correctly and refers to your Android device's local network.
 
