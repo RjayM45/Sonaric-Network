@@ -92,16 +92,16 @@ Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP addres
 Let's say you want to forward `local port 44004` on your Android device to `port 22` on the remote server:
 
 1. *Host Configuration*:
-    - *Label*: My Server
-    - *Hostname*: remote_server_ip (e.g., 192.168.1.100)
-    - *Port*: 22
-    - *Username*: your_username
-    - *Password*: your_password (if not using keys)
+    - *Label*: `My Server`
+    - *Hostname*: `remote_server_ip` (e.g., 192.168.1.100)
+    - *Port*: `22`
+    - *Username*: `your_username`
+    - *Password*: `your_password` (if not using keys)
 
 2. *Port Forwarding Configuration*:
-    - *Type*: Local
-    - *Source Port*: 44004
-    - *Destination*: localhost:22
+    - *Type*: `Local`
+    - *Source Port*: `44004`
+    - *Destination*: `localhost:22`
 
 Following these steps will create an SSH tunnel and forward `local port 44004` on your Android device to port 22 on the remote server using Termius.
 
@@ -110,7 +110,7 @@ Following these steps will create an SSH tunnel and forward `local port 44004` o
 
 1. *Install ConnectBot*: Download and install ConnectBot from the Google Play Store.
 
-2. *Open ConnectBot*: Launch the ConnectBot app.
+2. *Open ConnectBot*: Launch the `ConnectBot` app.
 
 3. *Set Up SSH Connection*:
     - Tap the `+` icon to add a new host.
@@ -121,9 +121,9 @@ Following these steps will create an SSH tunnel and forward `local port 44004` o
     - Tap `Edit Port Forwards`.
     - Tap the `+` icon to add a new port forward.
     - Configure the local and remote ports. For example:
-        - Type: Local
-        - Source Port: 44004
-        - Destination: localhost:22
+        - Type: `Local`
+        - Source Port: `44004`
+        - Destination: `localhost:22`
     - Tap `Save`.
     - Back to main menu and tap the created `port`
 
@@ -131,9 +131,9 @@ Following these steps will create an SSH tunnel and forward `local port 44004` o
     - Tap the SSH connection to start the session.
     - Enter your password if prompted.
 
-6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
+6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via `127.0.0.1:44004` or `localhost:44004` on your Android device.
 
-Using 127.0.0.1 or localhost ensures that the forwarding works correctly and refers to your Android device's local network.
+Using `127.0.0.1` or `localhost` ensures that the forwarding works correctly and refers to your Android device's local network.
 
 -DONE-
 
