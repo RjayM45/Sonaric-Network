@@ -103,7 +103,7 @@ Let's say you want to forward `local port 44004` on your Android device to `port
     - *Source Port*: `44004`
     - *Destination*: `localhost:22`
 
-Following these steps will create an SSH tunnel and forward `local port 44004` on your Android device to port 22 on the remote server using Termius.
+Following these steps will create an SSH tunnel and forward `local port 44004` on your Android device to `port 22` on the remote server using Termius.
 
 ## RECOMMENDED
 ### Using ConnectBot App
