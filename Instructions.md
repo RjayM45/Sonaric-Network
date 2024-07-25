@@ -60,81 +60,29 @@ Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP addres
 ### Accessing the GUI in Smartphone
 
 ## RECOMMENDED
-### Using ConnectBot App
+### Using Termux
 
-1. *Install ConnectBot*: Download and install ConnectBot from the Google Play Store.
+1. Install Termux: Download and install the Termux app from the Google Play Store.
+2. Open Termux: Launch the Termux app.
+3. Update and Install OpenSSH: Update the package list and install the OpenSSH package by running the following commands:
+```
+pkg update
+pkg install openssh
+```
 
-2. *Open ConnectBot*: Launch the `ConnectBot` app.
+4. Create an SSH Tunnel: Use the ssh command to create the tunnel. Replace user, remote_server, and remote_port with your actual details. The command looks like this:
 
-3. *Set Up SSH Connection*:
-    - Tap the `+` icon to add a new host.
-    - Enter the SSH connection details (e.g., user@remote_server / root@192.168.1.1) and tap “Save”.
+```
+ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 root@'YOUR-IP'
+```
 
-4. *Configure Port Forwarding*:
-    - Long press the saved SSH connection to open the context menu.
-    - Tap `Edit Port Forwards`.
-    - Tap the `+` icon to add a new port forward.
-    - Configure the local and remote ports. For example:
-        - Type: `Local`
-        - Source Port: `44004`
-        - Destination: `localhost:22`
-    - Tap `Save`.
-    - Back to main menu and tap the created `port`
+`user@remote_server`: Replace user with your SSH username and remote_server with the hostname or IP address of the remote server.
 
-5. *Establish the SSH Connection*:
-    - Tap the SSH connection to start the session.
-    - Enter your password if prompted.
+5. Enter Password: If prompted, enter your SSH password to establish the connection.
 
-6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via `127.0.0.1:44004` or `localhost:44004` on your Android device.
+6. Access the Forwarded Port: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
+    - Use Google Chrome Desktop Mode
 
-Using `127.0.0.1` or `localhost` ensures that the forwarding works correctly and refers to your Android device's local network.
-
-### Termius App
-1. To create an SSH tunnel to forward the required ports to your local machine
-2. Install Termius_App: Download and install the Termius app from Google Play Store.
-3. Open Termius: Launch the Termius App
-4. Add Host: *Set Up `SSH Connection`*:
-    - Tap the `+` button to create a new host.
-    - Enter the necessary SSH connection details:
-        - *Label*: Give the connection a name (e.g., "My Server/Sonaric").
-        - *Hostname*: Enter the hostname or IP address of the remote server.
-        - *Port*: Usually 22 (default for SSH).
-        - *Username*: Your SSH username. (contabo uses `root` as default username)
-        - *Password*: Your SSH password (or leave blank if using key-based authentication).
-
-4. *Set Up Port Forwarding*:
-    - After saving the host, tap on it to open the details page.
-    - Tap on `Port Forwarding`.
-    - Tap the `+` button to add a new port forward.
-    - Configure the port forwarding:
-        - *Type*: Choose `Local` for local port forwarding.
-        - *Source Port*: The port on your Android device you want to forward (e.g., `44004`).
-        - *Destination*: The destination in the format `localhost:remote_port` (e.g., `localhost:22` for forwarding to `port 22` on the remote server).
-    - Save the port forwarding settings.
-
-5. *Connect to the SSH Server*:
-    - Go back to the host details and tap "Connect".
-    - Enter your SSH password if prompted or use your private key if set up.
-
-6. *Access the Forwarded Port*: Once the SSH tunnel is established, you can access the remote service via `127.0.0.1:44004` or `localhost:44004` on your Android device.
-
-### Example Configuration
-
-Let's say you want to forward `local port 44004` on your Android device to `port 22` on the remote server:
-
-1. *Host Configuration*:
-    - *Label*: `My Server`
-    - *Hostname*: `remote_server_ip` (e.g., 192.168.1.100)
-    - *Port*: `22`
-    - *Username*: `your_username`
-    - *Password*: `your_password` (if not using keys)
-
-2. *Port Forwarding Configuration*:
-    - *Type*: `Local`
-    - *Source Port*: `44004`
-    - *Destination*: `localhost:22`
-
-Following these steps will create an SSH tunnel and forward `local port 44004` on your Android device to `port 22` on the remote server using Termius.
 
 -DONE-
 
