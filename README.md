@@ -64,14 +64,15 @@ sonaric node-info
 ## Accessing the GUI in PC
 ### Open terminal on local machine
 1. Create an SSH tunnel to forward the required ports to your local machine
-Run this on local machine /cli
+Run this on local machine /cli/windows powershell
 ```
 ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 user@your-vps-ip
 ```
 
 Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP address.
 
-2. You will be prompted to authenticate cia SSH. Once authenticated, the SSH tunnel will be established.
+2. You will be prompted to authenticate cia SSH. Once authenticated, the SSH tunnel will be established. (minimize the powershell) 
+
 3. Open a web browser on your local machine and navigate to `http://localhost:44004` to access the Sonaric GUI.
 
 ## Accessing the GUI in Smartphone
@@ -96,6 +97,7 @@ ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127
 `user@remote_server`: Replace user with your SSH username and remote_server with the hostname or IP address of the remote server.
 
 5. Enter Password: If prompted, enter your SSH password to establish the connection.
+     - minimize the terminal
 
 6. Access the Forwarded Port: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
     - Use Google Chrome Desktop Mode
