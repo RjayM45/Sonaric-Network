@@ -33,7 +33,7 @@ result!
  ...
 ```
 
-### Updating
+### Updating Node
 ```
 apt-get update
 ```
