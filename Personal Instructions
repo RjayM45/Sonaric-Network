@@ -11,4 +11,4 @@ sudo apt install screen
 # Create screen
 ```
 screen -s `node-name`
-```
+```g
