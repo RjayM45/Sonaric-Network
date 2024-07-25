@@ -112,6 +112,7 @@ sonaric node-info
 - feedback
 - Click `Submit`.
 
+---
 ### Get Operator Role in Discord
 
 1. Open Discord
@@ -129,4 +130,5 @@ sonaric node-info
 curl -sSL http://get.sonaric.xyz/scripts/register.sh | bash -s -- `your-code`
 ```
 Thank you very much
--DONE-
+
+DONE
