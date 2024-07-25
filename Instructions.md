@@ -45,6 +45,7 @@ apt-get install sonaricd sonaric
 ```
 sonaric node-info
 ```
+
 ---
 ### Accessing the GUI in PC
 1. Create an SSH tunnel to forward the required ports to your local machine
@@ -52,6 +53,7 @@ Run this on local machine /cli
 ```
 ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 `user@your-vps-ip`
 ```
+
 Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP address.
 
 2. You will be prompted to authenticate cia SSH. Once authenticated, the SSH tunnel will be established.
@@ -66,6 +68,7 @@ Replace user with your VPS `username` and  `your-vps-ip` with your VPS IP addres
 2. Open Termux: Launch the Termux app.
 3. Update and Install OpenSSH: Update the package list and install the OpenSSH package by running the following commands:
 ```
+
 pkg update
 pkg install openssh
 ```
@@ -82,7 +85,13 @@ ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127
 
 6. Access the Forwarded Port: Once the SSH tunnel is established, you can access the remote service via 127.0.0.1:44004 or localhost:44004 on your Android device.
     - Use Google Chrome Desktop Mode
-
+  
+7. On the GUI.
+   - click on `Referral Codes` on the upper right corner
+   - Add my code for additional 100 points
+```
+troe4jy
+```
 
 -DONE-
 
@@ -95,9 +104,29 @@ https://docs.google.com/forms/d/e/1FAIpQLSeSeoVwohC4Wu3kZ06FGmKPO5afKKEvwjLresOf
 ```
 sonaric node-info
 ```
+
 - operating system
 - System type
 - System Specs
 - Other nodes RPC: for those who runs other node projects (e.g. allora, rivalz, farcaster, nubit)
 - feedback
 - Click `Submit`.
+
+### Get Operator Role in Discord
+
+1. Open Discord
+2. Go to [Sanoric](https://discord.com/invite/k2NGekWtVg) Discord channel.
+3. Verify
+4. Go to General channel and input command
+```
+/addnode
+```
+
+5. Copy the code provided by sanoric bot
+6. Go to local Terminal or GUI (Termux App in Smartphone)
+7. Input command :Don't forgot to paste your code from discord!
+```
+curl -sSL http://get.sonaric.xyz/scripts/register.sh | bash -s -- `your-code`
+```
+Thank you very much
+-DONE-
