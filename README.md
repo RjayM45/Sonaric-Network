@@ -29,7 +29,7 @@ screen -s `node-name`
 
 ### Run Script
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/monk-io/sonaric-install/main/linux-install-sonaric.sh)"
+sh -c "$(curl -fsSL https://get.sonaric.xyz/scripts/install.sh)"
 ```
 
 ### Confirm that the node is running by issuing the following command
